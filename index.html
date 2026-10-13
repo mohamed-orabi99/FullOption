@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Full Options | لعشاق التميز</title>
 <meta name="description" content="إكسسوارات سيارات داخلية وخارجية وإضاءة وحساسات وديكورات في الإمارات.">
 <link rel="preconnect" href="https://script.google.com"><link rel="preconnect" href="https://script.googleusercontent.com" crossorigin>
@@ -65,6 +65,127 @@ footer{background:var(--sf);border-top:1px solid var(--ln);padding:22px 16px;tex
  .two,.gal{grid-template-columns:1fr}.g2,.g3{grid-template-columns:1fr}.hero h1{font-size:24px}.cartbtn{margin-inline-start:auto}.logo b{font-size:19px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.cats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:380px){.grid{grid-template-columns:1fr}}
 @media print{header,footer,.np,#toast{display:none!important}body{background:#fff}.box{border:0;padding:0}main{padding:0}}
+
+/* ===== Full Options responsive refresh: Pepsi blue + orange ===== */
+:root{
+ --bg:#f5f8fc;--sf:#ffffff;--ink:#14253d;--mut:#65758b;--ln:#dce5ef;
+ --ac:#005cb4;--ac2:#e8f3ff;--hot:#ff6b00;--rd:#c62828;
+ --brand-blue:#005cb4;--brand-orange:#ff6b00;--soft-blue:#eef6ff;
+}
+html{width:100%;max-width:100%;overflow-x:clip;scroll-padding-top:110px;-webkit-text-size-adjust:100%;}
+body{width:100%;max-width:100%;overflow-x:clip;background:var(--bg);}
+img{max-width:100%;}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent;}
+button,a{touch-action:manipulation;}
+button{cursor:pointer;}
+header{box-shadow:0 3px 16px rgba(13,47,84,.06);}
+.ann{background:linear-gradient(90deg,#004b93,#0071ce);}
+.bar{min-width:0;gap:clamp(6px,1.4vw,12px);}
+.logo{min-width:0;}
+.logo b{color:var(--brand-blue);letter-spacing:-.35px;}
+.cartbtn,.btn{background:var(--brand-blue);transition:background .18s ease,transform .18s ease;}
+.cartbtn:hover,.btn:hover{background:#00498f;}
+.btn:active,.cartbtn:active{transform:translateY(1px);}
+.btn.wa{background:#16834a;}
+.btn.sec{background:#fff;border-color:#c9d8e8;}
+.btn.sec:hover{background:var(--soft-blue);}
+nav a.on,.chip.on{background:var(--brand-blue);border-color:var(--brand-blue);}
+nav a:hover,.cat:hover{background:var(--ac2);}
+.hero{background:radial-gradient(circle at 90% 5%,rgba(255,107,0,.13),transparent 32%),linear-gradient(135deg,#e7f3ff,#fff 70%);border-color:#d5e7fa;}
+.hero h1{color:var(--brand-blue);}
+.hero .btn{background:var(--brand-orange);}
+.hero .btn:hover{background:#e85f00;}
+.price{color:var(--brand-blue);}
+.off{background:var(--brand-orange);}
+.fs{background:var(--brand-orange);}
+.card{min-width:0;border-color:#e0e8f1;border-radius:14px;box-shadow:0 3px 12px rgba(16,55,91,.045);}
+.card .in{min-width:0;padding:clamp(8px,1.4vw,12px);}
+.card h3{min-width:0;overflow-wrap:anywhere;line-height:1.45;min-height:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+/* Product photos: show the whole item instead of cropping it. */
+.im{position:relative;aspect-ratio:1/1;min-width:0;background:#f1f6fb;padding:8px;isolation:isolate;}
+.im img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;border-radius:8px;}
+.im.img-error:after{content:'🚗';font-size:42px;position:absolute;inset:0;display:grid;place-items:center;background:#f1f6fb;}
+.gal{min-width:0;}
+.gal .main{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:center;background:#f1f6fb;padding:8px;}
+.thumbs{max-width:100%;padding:2px 1px 8px;overscroll-behavior-inline:contain;}
+.thumbs img{flex:0 0 62px;object-fit:contain;background:#f1f6fb;padding:3px;}
+.cats{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));}
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(210px,100%),1fr));align-items:stretch;}
+.box{min-width:0;overflow-wrap:anywhere;border-color:#e0e8f1;}
+.row>*{min-width:0;}
+input,select,textarea{max-width:100%;min-width:0;}
+.search{display:block;margin-inline:auto;}
+.g2,.g3,.two,.gal{min-width:0;}
+table{border-collapse:separate;border-spacing:0;}
+/* Tables remain readable on narrow screens and scroll inside their own container. */
+.box:has(> table),.box:has(> tbody),.box:has(table){max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{min-width:520px;}
+.inv{width:100%;max-width:760px;min-width:0;}
+.inv .head{gap:12px;flex-wrap:wrap;}
+#toast{width:max-content;max-width:calc(100vw - 24px);text-align:center;}
+@media(max-width:860px){
+ main{padding:12px 12px 36px;}
+ .bar{padding:8px 12px;}
+ .burger{flex:0 0 42px;}
+ .logo{flex:1 1 auto;}
+ .cartbtn{flex:0 0 auto;padding:7px 11px;font-size:13px;}
+ .logo b{font-size:clamp(16px,4.5vw,19px);}
+ .logo small{font-size:11px;}
+ nav{max-height:calc(100dvh - 90px);overflow-y:auto;}
+ .hero{padding:22px 14px;border-radius:14px;margin-bottom:20px;}
+ .hero h1{font-size:clamp(22px,6vw,28px);}
+ .hero p{font-size:15px;}
+ .hero .row{align-items:stretch;}
+ .hero .search{flex:1 1 100%;max-width:100%;}
+ .hero .row .btn{flex:1 1 100%;}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+ .cats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+ .cat{padding:13px 7px;font-size:13px;overflow-wrap:anywhere;}
+ .cat i{font-size:26px;}
+ .card .in{gap:7px;}
+ .card .tag{align-self:flex-start;max-width:100%;white-space:normal;}
+ .card .btn{width:100%;padding:9px 7px;font-size:13px;line-height:1.35;}
+ .price{font-size:15px;}
+ .old{font-size:12px;margin-inline-start:3px;}
+ .off{font-size:11px;margin-inline-start:3px;}
+ .fs{font-size:10px;top:6px;inset-inline-start:6px;padding:2px 6px;}
+ .box{padding:12px;}
+ .two,.gal{grid-template-columns:minmax(0,1fr);gap:12px;}
+ .g2,.g3{grid-template-columns:minmax(0,1fr);}
+ .inv .row .btn{flex:1 1 100%;}
+ .sh{align-items:flex-start;}
+ .sh h2{font-size:18px;}
+}
+@media(max-width:390px){
+ main{padding-inline:9px;}
+ .bar{gap:6px;padding-inline:9px;}
+ .burger{width:38px;height:40px;flex-basis:38px;}
+ .cartbtn{padding:6px 8px;font-size:12px;}
+ .logo b{font-size:16px;}
+ .logo small{font-size:10px;}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;}
+ .im{padding:5px;}
+ .card .in{padding:8px;gap:6px;}
+ .card h3{font-size:13px;line-height:1.4;}
+ .card .price{font-size:14px;}
+ .card .btn{font-size:12px;min-height:40px;}
+ .box{padding:10px;}
+ .hero{padding:18px 10px;}
+ .row{gap:7px;}
+ .qty button{width:30px;}
+}
+@media(max-width:330px){
+ .logo small{display:none;}
+ .grid{grid-template-columns:minmax(0,1fr);}
+ .im{aspect-ratio:1.15/1;}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+@media print{
+ html,body{overflow:visible!important;}
+ table{min-width:0;display:table;overflow:visible;}
+ .box:has(table){overflow:visible;}
+}
+
 </style></head><body>
 <header><div class="ann" id="ann"></div>
 <div class="bar"><button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button><a class="logo" href="#/"><b>Full Options</b><small id="slg">لعشاق التميز</small></a><button class="cartbtn" id="cartb">🛒 <span id="cartl">السلة</span><b id="cc">0</b></button></div>
@@ -147,7 +268,7 @@ async function applyCoupon(code, silent) {
 }
 /* ---------------- مكوّنات العرض ---------------- */
 const V = {}, skel = n => `<div class="grid">${'<div class="card sk"><div class="im"></div><div class="in"><div class="l"></div><div class="l" style="width:60%"></div></div></div>'.repeat(n)}</div>`;
-const imgTag = (src, alt, icon) => src ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" width="300" height="300">` : `<span aria-hidden="true">${icon || "🚗"}</span>`;
+const imgTag = (src, alt, icon) => src ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" width="300" height="300" onerror="this.onerror=null;this.parentElement.classList.add('img-error');this.style.display='none'">` : `<span aria-hidden="true">${icon || "🚗"}</span>`;
 const badge = f => f ? `<span class="fs">${t("free")}</span>` : "";
 const retryBox = () => errored ? `<div class="retry"><span>${t("loadErr")}</span><button class="btn sm" data-retry>${t("retry")}</button></div>` : "";
 const card = p => { const sale = price(p) < p.price, out = p.stock != null && p.stock <= 0; return `<div class="card">${badge(p.free_shipping)}<div class="im" data-go="#/p/${esc(p.id)}">${imgTag(p.image, nm(p), ICONS[catOf(p).id])}</div><div class="in"><span class="tag">${esc(catName(catOf(p)))}</span><h3 data-go="#/p/${esc(p.id)}">${esc(nm(p))}</h3>
@@ -174,7 +295,7 @@ V.cat = id => { const c = CATS.find(x => x.id === id); return retryBox() + (read
 V.packages = () => `${retryBox()}<h1>${t("pkgsT")}</h1><p class="mut">${t("pkgsS")}</p>${!ready ? skel(3) : K.length ? `<div class="grid">${K.map(pkgCard).join("")}</div>` : `<div class="box">${t("nopk")}</div>`}`;
 V.p = id => {
   if (!ready) return skel(2); const p = P.find(x => x.id === id); if (!p) return `<div class="box">${t("nf")} <a href="#/products">${t("back")}</a></div>`; const imgs = [p.image, ...p.images].filter(Boolean), sale = price(p) < p.price, out = p.stock != null && p.stock <= 0;
-  return `<p><a href="#/products">${t("back")}</a></p><div class="gal box"><div>${imgs.length ? `<img class="main" id="mainimg" src="${esc(imgs[0])}" alt="${esc(nm(p))}" width="600" height="600"><div class="thumbs">${imgs.length > 1 ? imgs.map((s, i) => `<img src="${esc(s)}" class="${i ? "" : "on"}" data-img="${esc(s)}" alt="" loading="lazy" width="62" height="62">`).join("") : ""}</div>` : `<div class="im" style="border-radius:12px;font-size:90px">${ICONS[catOf(p).id] || "🚗"}</div>`}</div>
+  return `<p><a href="#/products">${t("back")}</a></p><div class="gal box"><div>${imgs.length ? `<img class="main" id="mainimg" src="${esc(imgs[0])}" alt="${esc(nm(p))}" width="600" height="600" decoding="async"><div class="thumbs">${imgs.length > 1 ? imgs.map((s, i) => `<img src="${esc(s)}" class="${i ? "" : "on"}" data-img="${esc(s)}" alt="" loading="lazy" width="62" height="62">`).join("") : ""}</div>` : `<div class="im" style="border-radius:12px;font-size:90px">${ICONS[catOf(p).id] || "🚗"}</div>`}</div>
   <div><span class="tag">${esc(catName(catOf(p)))}</span> ${p.free_shipping ? `<span class="fs inl">${t("free")}</span>` : ""}<h1>${esc(nm(p))}</h1><div style="margin-bottom:12px"><span class="price" style="font-size:24px">${money(price(p))}</span>${sale ? `<span class="old">${money(p.price)}</span><span class="off">${t("save")} ${money(p.price - price(p))}</span>` : ""}</div>
   <p class="pol">${esc(ds(p))}</p><p class="mut">${t("pay")}</p><div class="row"><button class="btn" data-add="${esc(p.id)}" ${out ? "disabled" : ""}>${out ? t("out") : t("add")}</button><button class="btn sec" data-buy="${esc(p.id)}" ${out ? "disabled" : ""}>${t("buy")}</button></div></div></div>`;
 };
